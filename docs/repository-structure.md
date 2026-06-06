@@ -7,11 +7,14 @@ This repository should stay readable and evidence-led. It should not become a du
 ```text
 market-quant-research/
   README.md
+  LICENSE
+  DISCLAIMER.md
   requirements.txt
   docs/
     portfolio-map.md
     evidence-index.md
     data-and-reproducibility.md
+    input-schemas.md
     migration-scope.md
     migration-notes.md
     research-governance.md
@@ -49,6 +52,10 @@ market-quant-research/
     crypto/
     etf-stabilizer/
     portfolio-bridge/
+  tests/
+    test_etf_stabilizer.py
+    test_metrics.py
+    test_portfolio_weights.py
 ```
 
 ## Directory Roles
@@ -59,6 +66,7 @@ market-quant-research/
 | `projects/` | Reader-facing project pages, public reports, selected result CSVs |
 | `code/` | Public code anchors and run-status notes |
 | `assets/` | Selected figures used by project pages and evidence index |
+| `tests/` | Lightweight smoke tests for public code anchors |
 
 ## What Belongs In `projects/`
 
@@ -80,6 +88,7 @@ Each code appendix should state:
 
 - whether it can run publicly;
 - what data is needed;
+- what input schema is expected;
 - which reports/results it supports;
 - what is deliberately not included.
 

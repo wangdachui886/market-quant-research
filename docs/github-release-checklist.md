@@ -11,6 +11,8 @@
 - Archive pages do not sound like hidden strategy promotions.
 - A-share small-cap remains archive / observation only.
 - Every code appendix states `Can this run?` and lists data requirements.
+- `LICENSE`, `DISCLAIMER.md`, and `docs/input-schemas.md` are present.
+- Root README and code-related files are English-first; China-market reports may remain Chinese or bilingual.
 
 ## Evidence Checks
 
@@ -19,6 +21,7 @@
 - Internal source-family or migration notes stay in `docs/migration-notes.md`.
 - Result CSVs are selected evidence tables, not full raw-data dumps.
 - Current selections, current order plans, and personal execution records are excluded.
+- User-supplied schemas are documented without exposing raw private data.
 
 ## Safety Checks
 
@@ -29,6 +32,7 @@
 - No Office draft files, slide decks, PDFs, or build artifacts.
 - No claims of trading advice, live-readiness, or guaranteed future performance.
 - `.gitignore` blocks common sensitive and heavy file types.
+- Smoke tests run with `python -m unittest discover -s tests`.
 
 ## Suggested Release Scope
 

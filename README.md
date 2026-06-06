@@ -4,7 +4,9 @@ This repository is the technical evidence layer for my market quant research por
 
 Notion is the public reading interface. GitHub is the inspectable research archive: code, selected result tables, research reports, evidence maps, reproducibility notes, and archive decisions.
 
-本仓库是 Notion 量化研究作品集的技术证据层。Notion 负责叙事和阅读体验；GitHub 负责把研究过程、代码锚点、结果表、图表来源和归档纪律放到可检查的位置。
+中文说明：本仓库是 Notion 量化研究作品集的技术证据层；Notion 偏叙事和阅读体验，GitHub 偏代码锚点、结果表、图表来源和复现边界。
+
+See [DISCLAIMER](DISCLAIMER.md) and [LICENSE](LICENSE) before reusing any material.
 
 ## Start Here
 
@@ -45,16 +47,23 @@ Across markets, the process is:
 
 Failed or downgraded ideas stay visible because they explain what the final choices are not trying to do.
 
+## Language Policy
+
+GitHub root pages and code-related files are English-first, with short Chinese notes only where they help explain China-market context. Internal research reports, China-market notes, and figures may keep Chinese or bilingual wording. The goal is not full bilingual duplication; it is a clean public code/research archive that remains readable for technical and international reviewers while preserving the local-market reasoning.
+
 ## Minimal Run Path
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests
 python code/crypto/spot-long-only/research-scripts/02_spot_universe_baseline.py
 python code/crypto/spot-long-only/research-scripts/10_final_predeployment_validation.py
 python code/convertible-bonds/run_final_backtest.py
 ```
 
-The Crypto Spot Long-Only scripts can fetch public Binance daily klines. Convertible-bond and ETF modules need user-supplied local CSV/DataFrame inputs because the raw data is private, licensed, or not redistributed here. See [Data & Reproducibility](docs/data-and-reproducibility.md).
+On Windows, `py -m pip ...` and `py -m unittest ...` are equivalent if `python` points to the Microsoft Store placeholder.
+
+The Crypto Spot Long-Only scripts can fetch public Binance daily klines. Convertible-bond and ETF modules need user-supplied local CSV/DataFrame inputs because the raw data is private, licensed, or not redistributed here. See [Data & Reproducibility](docs/data-and-reproducibility.md) and [Input Schemas](docs/input-schemas.md).
 
 ## Reader Path
 
@@ -71,7 +80,8 @@ For a reviewer checking research discipline:
 1. [Research Governance](docs/research-governance.md)
 2. [Evidence Index](docs/evidence-index.md)
 3. [Data & Reproducibility](docs/data-and-reproducibility.md)
-4. [Migration Notes](docs/migration-notes.md)
+4. [Input Schemas](docs/input-schemas.md)
+5. [Migration Notes](docs/migration-notes.md)
 
 For a reviewer checking code:
 

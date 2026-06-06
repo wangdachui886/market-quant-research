@@ -8,31 +8,31 @@
   "default_module_weight_in_total_portfolio": 0.30,
   "paired_core_strategy": {
     "name": "convertible_bond_top12_keep37",
-    "path": "../convertible-bonds/output/final_daily_returns.csv",
+    "path": "../../projects/convertible-bonds/results/final/final_daily_returns.csv",
     "return_column": "net"
   },
   "etf_sleeve_target_weights": {
     "510300.SH": {
-      "name": "沪深300ETF",
+      "name": "CSI 300 ETF",
       "asset": "A-share broad equity",
       "normal_weight": 0.20,
       "gate": "equity_trend_gate"
     },
     "513500.SH": {
-      "name": "标普500ETF",
+      "name": "S&P 500 ETF",
       "asset": "cross-border broad equity",
       "normal_weight": 0.20,
       "gate": "equity_trend_gate + premium_filter",
       "note": "Current live default uses S&P 500. Nasdaq remains an observation candidate and needs a separate retest before replacement."
     },
     "511010.SH": {
-      "name": "国债ETF",
+      "name": "Treasury ETF",
       "asset": "defensive bond / fallback",
       "normal_weight": 0.40,
       "gate": "always_on"
     },
     "518880.SH": {
-      "name": "黄金ETF",
+      "name": "Gold ETF",
       "asset": "gold / diversifier",
       "normal_weight": 0.20,
       "gate": "always_on"

@@ -17,8 +17,11 @@ The minimum public standard is:
 ## Minimal Environment
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests
 ```
+
+On Windows, `py -m pip ...` and `py -m unittest ...` are equivalent if `python` points to the Microsoft Store placeholder.
 
 Core Python dependencies:
 
@@ -39,6 +42,8 @@ Pillow
 | Convertible Bonds historical research scripts | Inspectable, not standalone | Older private strategy package and private panel data |
 | ETF Stabilizer | Yes as function logic | User-supplied close/NAV DataFrames |
 | Smart DCA | Documentation only for now | Raw script not yet migrated as public code |
+
+Small public input contracts are documented in [Input Schemas](input-schemas.md). These schema notes list expected columns only; they do not include real private or licensed market data.
 
 ## Data Boundary
 

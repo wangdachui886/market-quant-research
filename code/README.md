@@ -12,6 +12,16 @@ It is not a full migration of every local research folder. Raw data, caches, `.e
 | [crypto/spot-long-only](crypto/spot-long-only/README.md) | Yes for public-data research scripts | Internet access for Binance daily klines | Active Crypto baseline and validation chain |
 | [etf-stabilizer](etf-stabilizer/README.md) | Yes as function logic | User-supplied close/NAV DataFrames | ETF sleeve target-weight logic |
 
+Run the lightweight public smoke tests with:
+
+```bash
+python -m unittest discover -s tests
+```
+
+On Windows, `py -m unittest discover -s tests` is equivalent if `python` points to the Microsoft Store placeholder.
+
+For expected user-supplied input columns, see [Input Schemas](../docs/input-schemas.md).
+
 ## Included
 
 | Directory | What it contains | Why it is included |
@@ -21,6 +31,8 @@ It is not a full migration of every local research folder. Raw data, caches, `.e
 | `crypto/spot-long-only/research-scripts/` | Spot Long-Only research process scripts 01-11 | Connects reports, figures, and result CSVs |
 | `crypto/spot-long-only/spot_trend_core/` | Cleaned operational-style core modules | Shows engineering structure beyond one-off scripts |
 | `etf-stabilizer/` | ETF Stabilizer target-weight logic and sanitized params | Directly supports the portfolio stabilizer line |
+
+Some research scripts contain Chinese report and figure labels because they generate China-market or local research exhibits. Public run notes, code README files, and reusable module docstrings should remain English-first.
 
 ## Not Included
 
