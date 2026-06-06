@@ -1,0 +1,88 @@
+{
+  "strategy_name": "ETF Stabilizer V1.1",
+  "role": "Convertible-bond portfolio stabilizer, not standalone alpha",
+  "rebalance_frequency": "monthly",
+  "signal_timing": "evaluate on month-end, execute on the next tradable day",
+  "execution_price": "close",
+  "research_cost_bps": 30,
+  "default_module_weight_in_total_portfolio": 0.30,
+  "paired_core_strategy": {
+    "name": "convertible_bond_top12_keep37",
+    "path": "../convertible-bonds/output/final_daily_returns.csv",
+    "return_column": "net"
+  },
+  "etf_sleeve_target_weights": {
+    "510300.SH": {
+      "name": "沪深300ETF",
+      "asset": "A-share broad equity",
+      "normal_weight": 0.20,
+      "gate": "equity_trend_gate"
+    },
+    "513500.SH": {
+      "name": "标普500ETF",
+      "asset": "cross-border broad equity",
+      "normal_weight": 0.20,
+      "gate": "equity_trend_gate + premium_filter",
+      "note": "Current live default uses S&P 500. Nasdaq remains an observation candidate and needs a separate retest before replacement."
+    },
+    "511010.SH": {
+      "name": "国债ETF",
+      "asset": "defensive bond / fallback",
+      "normal_weight": 0.40,
+      "gate": "always_on"
+    },
+    "518880.SH": {
+      "name": "黄金ETF",
+      "asset": "gold / diversifier",
+      "normal_weight": 0.20,
+      "gate": "always_on"
+    }
+  },
+  "fallback": {
+    "default": "511010.SH + 518880.SH",
+    "failed_equity_to_bond": 0.80,
+    "failed_equity_to_gold": 0.20,
+    "execution_backup": "511360.SH",
+    "note": "When an equity sleeve fails its gate, 80% of that failed sleeve moves to treasury ETF and 20% moves to gold ETF. Short financing ETF is only an execution backup, not the long-window research default."
+  },
+  "equity_trend_gate": {
+    "lookback_trading_days": 252,
+    "hold_if": [
+      "trailing_return > 0",
+      "latest_price > moving_average"
+    ],
+    "fallback_if_failed": "80% to 511010.SH and 20% to 518880.SH"
+  },
+  "premium_filter": {
+    "applies_to": ["513500.SH"],
+    "metric": "close / nav - 1",
+    "max_abs_premium": 0.05,
+    "fallback_if_failed": "80% to 511010.SH and 20% to 518880.SH",
+    "note": "This is a conservative execution filter, not a return-maximization rule. QDII NAV may have timing noise."
+  },
+  "research_summary": {
+    "standalone_common_window_v11": {
+      "equity_switch_cagr": 0.069116,
+      "equity_switch_mdd": -0.105907,
+      "equity_switch_calmar": 0.652613,
+      "worst_12m": -0.0441,
+      "max_drawdown_start": "2015-06-08",
+      "max_drawdown_trough": "2015-08-25",
+      "max_drawdown_recovery": "2016-07-19",
+      "peak_to_trough_days": 78,
+      "underwater_days": 407
+    },
+    "standalone_old_bond_only_fallback": {
+      "equity_switch_cagr": 0.065057,
+      "equity_switch_mdd": -0.105907,
+      "equity_switch_calmar": 0.614283
+    },
+    "combo_close_30bps_filter5_v11": {
+      "cb_weight": 0.70,
+      "etf_weight": 0.30,
+      "cagr": 0.154886,
+      "mdd": -0.107668,
+      "calmar": 1.438548
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+  <rect width="1280" height="560" fill="#fbfaf7"/>
+  <text x="64" y="58" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#1f2933">From Strategy Alpha to Portfolio Construction / 从策略收益到组合构建</text>
+  <text x="64" y="92" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="17" fill="#5b6470">The core question shifts from "can one strategy be perfect?" to "which risks should be handled at the portfolio level?"</text>
+  <g font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+    <rect x="82" y="145" width="300" height="180" rx="18" fill="#eef5f0" stroke="#b8d7c0"/>
+    <text x="112" y="188" font-size="23" font-weight="700" fill="#173b27">Convertible Bond Core</text>
+    <text x="112" y="224" font-size="16" fill="#274636">70% portfolio weight</text>
+    <text x="112" y="252" font-size="16" fill="#274636">Structural alpha candidate</text>
+    <text x="112" y="280" font-size="16" fill="#274636">Long-only beta remains</text>
+    <path d="M382 235 L500 235" stroke="#7a8691" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="500" y="145" width="280" height="180" rx="18" fill="#fff4ef" stroke="#e2b9a5"/>
+    <text x="530" y="188" font-size="23" font-weight="700" fill="#6a3420">Internal Switch Tested</text>
+    <text x="530" y="224" font-size="16" fill="#6d4b3d">MA / breadth helped in tails</text>
+    <text x="530" y="252" font-size="16" fill="#6d4b3d">but platform was narrow</text>
+    <text x="530" y="280" font-size="16" fill="#6d4b3d">not promoted as a rule</text>
+    <path d="M780 235 L898 235" stroke="#7a8691" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="898" y="145" width="300" height="180" rx="18" fill="#eef2f8" stroke="#b9c7df"/>
+    <text x="928" y="188" font-size="23" font-weight="700" fill="#20375b">ETF Stabilizer</text>
+    <text x="928" y="224" font-size="16" fill="#304868">30% portfolio weight</text>
+    <text x="928" y="252" font-size="16" fill="#304868">Low-frequency allocation</text>
+    <text x="928" y="280" font-size="16" fill="#304868">Lower correlation source</text>
+    <rect x="192" y="395" width="886" height="92" rx="16" fill="#fff" stroke="#d5d9de"/>
+    <text x="224" y="431" font-size="22" font-weight="700" fill="#26323f">Current Portfolio Decision / 当前组合决策</text>
+    <text x="224" y="462" font-size="16" fill="#59636e">70% convertible-bond core + 30% ETF Stabilizer improves drawdown and Calmar, while accepting lower standalone CAGR.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7a8691"/>
+    </marker>
+  </defs>
+</svg>

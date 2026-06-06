@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180">
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .ink { fill: #171717; }
+      .muted { fill: #5f646d; }
+      .white { fill: #ffffff; }
+      .line { stroke: #171717; stroke-width: 2.4; fill: none; }
+      .thin { stroke: #cfd3d8; stroke-width: 1.2; }
+      .root { fill: #171717; }
+      .cyan { fill: #19d6c7; }
+      .magenta { fill: #ff3ea5; }
+      .yellow { fill: #ffd43b; }
+      .blue { fill: #2f6bff; }
+      .red { fill: #ff4b3e; }
+      .card { fill: #ffffff; stroke: #171717; stroke-width: 2; rx: 6; }
+      .label { font-family: Inter, Arial, "Noto Sans SC", sans-serif; font-weight: 800; font-size: 28px; letter-spacing: 0; }
+      .title { font-family: Inter, Arial, "Noto Sans SC", sans-serif; font-weight: 800; font-size: 30px; letter-spacing: 0; }
+      .body { font-family: Inter, Arial, "Noto Sans SC", sans-serif; font-weight: 500; font-size: 23px; letter-spacing: 0; }
+      .small { font-family: Inter, Arial, "Noto Sans SC", sans-serif; font-weight: 600; font-size: 19px; letter-spacing: 0; }
+      .mono { font-family: "SF Mono", Consolas, monospace; font-weight: 700; font-size: 20px; letter-spacing: 0; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1800" height="1180"/>
+
+  <text class="label ink" x="90" y="90">RESEARCH HYPOTHESIS TREE</text>
+  <text class="body muted" x="90" y="128">Crypto Quant Portfolio / Low-Frequency Personal Investor Map</text>
+  <line class="thin" x1="90" y1="160" x2="1710" y2="160"/>
+
+  <rect class="root" x="570" y="210" width="660" height="150" rx="6"/>
+  <text class="title white" x="615" y="265">Crypto Personal Quant Map</text>
+  <text class="body white" x="615" y="306">Not a list of backtests, but a tree of falsifiable hypotheses.</text>
+  <text class="body white" x="615" y="338">不是回测列表，而是一棵可以被证伪的研究假设树。</text>
+
+  <line class="line" x1="900" y1="360" x2="900" y2="430"/>
+  <line class="line" x1="240" y1="430" x2="1560" y2="430"/>
+  <line class="line" x1="240" y1="430" x2="240" y2="485"/>
+  <line class="line" x1="504" y1="430" x2="504" y2="485"/>
+  <line class="line" x1="768" y1="430" x2="768" y2="485"/>
+  <line class="line" x1="1032" y1="430" x2="1032" y2="485"/>
+  <line class="line" x1="1296" y1="430" x2="1296" y2="485"/>
+  <line class="line" x1="1560" y1="430" x2="1560" y2="485"/>
+
+  <g transform="translate(90 485)">
+    <rect class="cyan" x="0" y="0" width="300" height="16"/>
+    <rect class="card" x="0" y="16" width="300" height="365"/>
+    <text class="mono ink" x="22" y="58">00</text>
+    <text class="title ink" x="22" y="98">Market Reality</text>
+    <text class="small muted" x="22" y="132">Where can an individual compete?</text>
+    <text class="body ink" x="22" y="184">Hypothesis</text>
+    <text class="small muted" x="22" y="218">Crypto edge is not evenly</text>
+    <text class="small muted" x="22" y="246">distributed. Some layers are</text>
+    <text class="small muted" x="22" y="274">accessible; others are</text>
+    <text class="small muted" x="22" y="302">infrastructure games.</text>
+    <text class="small ink" x="22" y="348">先定义边界，再允许策略好看。</text>
+  </g>
+
+  <g transform="translate(354 485)">
+    <rect class="magenta" x="0" y="0" width="300" height="16"/>
+    <rect class="card" x="0" y="16" width="300" height="365"/>
+    <text class="mono ink" x="22" y="58">01</text>
+    <text class="title ink" x="22" y="98">Directional Trend</text>
+    <text class="small muted" x="22" y="132">Can spot trend improve risk efficiency?</text>
+    <text class="body ink" x="22" y="184">Hypothesis</text>
+    <text class="small muted" x="22" y="218">Crypto has reflexive moves</text>
+    <text class="small muted" x="22" y="246">and long right tails. A slow</text>
+    <text class="small muted" x="22" y="274">spot sleeve may capture trend</text>
+    <text class="small muted" x="22" y="302">without leverage or shorting.</text>
+    <text class="small ink" x="22" y="348">先验证最小可执行 baseline。</text>
+  </g>
+
+  <g transform="translate(618 485)">
+    <rect class="yellow" x="0" y="0" width="300" height="16"/>
+    <rect class="card" x="0" y="16" width="300" height="365"/>
+    <text class="mono ink" x="22" y="58">02</text>
+    <text class="title ink" x="22" y="98">Short Leg</text>
+    <text class="small muted" x="22" y="132">Is downside trend symmetric?</text>
+    <text class="body ink" x="22" y="184">Hypothesis</text>
+    <text class="small muted" x="22" y="218">Falling markets are not rising</text>
+    <text class="small muted" x="22" y="246">markets in reverse. Shorts face</text>
+    <text class="small muted" x="22" y="274">squeeze, funding, borrow, and</text>
+    <text class="small muted" x="22" y="302">liquidation path risk.</text>
+    <text class="small ink" x="22" y="348">做空腿必须独立证明。</text>
+  </g>
+
+  <g transform="translate(882 485)">
+    <rect class="magenta" x="0" y="0" width="300" height="16"/>
+    <rect class="card" x="0" y="16" width="300" height="365"/>
+    <text class="mono ink" x="22" y="58">03</text>
+    <text class="title ink" x="22" y="98">Cross-Section</text>
+    <text class="small muted" x="22" y="132">Real alpha or alt-beta expansion?</text>
+    <text class="body ink" x="22" y="184">Hypothesis</text>
+    <text class="small muted" x="22" y="218">In stocks and futures, dispersion</text>
+    <text class="small muted" x="22" y="246">can create alpha. In crypto, major</text>
+    <text class="small muted" x="22" y="274">coins often share beta and become</text>
+    <text class="small muted" x="22" y="302">highly correlated under stress.</text>
+    <text class="small ink" x="22" y="348">要区分 alpha 和 alt beta。</text>
+  </g>
+
+  <g transform="translate(1146 485)">
+    <rect class="cyan" x="0" y="0" width="300" height="16"/>
+    <rect class="card" x="0" y="16" width="300" height="365"/>
+    <text class="mono ink" x="22" y="58">04</text>
+    <text class="title ink" x="22" y="98">Funding Carry</text>
+    <text class="small muted" x="22" y="132">Neutral yield or crowded trade?</text>
+    <text class="body ink" x="22" y="184">Hypothesis</text>
+    <text class="small muted" x="22" y="218">Funding looks market-neutral,</text>
+    <text class="small muted" x="22" y="246">but institutions may harvest the</text>
+    <text class="small muted" x="22" y="274">easy spread. Net edge depends on</text>
+    <text class="small muted" x="22" y="302">basis, fees, and execution.</text>
+    <text class="small ink" x="22" y="348">不是看 gross yield，而是看 net edge。</text>
+  </g>
+
+  <g transform="translate(1410 485)">
+    <rect class="red" x="0" y="0" width="300" height="16"/>
+    <rect class="card" x="0" y="16" width="300" height="365"/>
+    <text class="mono ink" x="22" y="58">05</text>
+    <text class="title ink" x="22" y="98">Archive / Filters</text>
+    <text class="small muted" x="22" y="132">Protection or overfit?</text>
+    <text class="body ink" x="22" y="184">Hypothesis</text>
+    <text class="small muted" x="22" y="218">A filter may repair one historical</text>
+    <text class="small muted" x="22" y="246">drawdown while damaging future</text>
+    <text class="small muted" x="22" y="274">upside. Interesting observations</text>
+    <text class="small muted" x="22" y="302">are not always trading rules.</text>
+    <text class="small ink" x="22" y="348">归档是研究纪律，不是失败。</text>
+  </g>
+
+  <line class="thin" x1="90" y1="930" x2="1710" y2="930"/>
+  <text class="label ink" x="90" y="990">Decision Standard</text>
+  <text class="body muted" x="90" y="1032">A branch is promoted only if it survives baseline design, attribution, cost, execution delay, robustness, and overfitting checks.</text>
+  <text class="body muted" x="90" y="1072">一条研究线只有穿过 baseline、归因、成本、执行滞后、稳健性和反过拟合检查，才有资格晋升。</text>
+</svg>
