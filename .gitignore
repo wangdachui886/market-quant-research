@@ -22,6 +22,8 @@ live/
 broker/
 orders/
 logs/
+*order_plan*
+latest_selection*
 
 *.parquet
 *.feather

@@ -1,30 +1,49 @@
 # Repository Structure
 
-This repository should stay small, readable, and evidence-led. It should not become a dump of every local experiment.
+This repository should stay readable and evidence-led. It should not become a dump of every local experiment.
 
-## Target Layout
+## Current Layout
 
 ```text
-market-quant-research-portfolio/
+market-quant-research/
   README.md
+  requirements.txt
   docs/
-    repository-structure.md
-    migration-scope.md
+    portfolio-map.md
     evidence-index.md
     data-and-reproducibility.md
+    migration-scope.md
+    migration-notes.md
     research-governance.md
     publication-policy.md
+    github-release-checklist.md
   projects/
     convertible-bonds/
-      README.md
+      reports/
+      results/
     crypto/
-      README.md
+      spot-long-only/
+        reports/
+        results/
+      smart-dca-candidate/
+        reports/
+        results/
     etf-stabilizer/
-      README.md
-    portfolio-bridge/
-      README.md
+      reports/
+      results/
+    cb-etf-bridge/
+      reports/
+      results/
     a-share-small-cap-archive/
-      README.md
+  code/
+    convertible-bonds/
+      cb_pre_live_core/
+      research-scripts/
+    crypto/
+      spot-long-only/
+        research-scripts/
+        spot_trend_core/
+    etf-stabilizer/
   assets/
     convertible-bonds/
     crypto/
@@ -32,36 +51,43 @@ market-quant-research-portfolio/
     portfolio-bridge/
 ```
 
+## Directory Roles
+
+| Directory | Role |
+|---|---|
+| `docs/` | Cross-project map, evidence index, reproducibility policy, migration scope, governance |
+| `projects/` | Reader-facing project pages, public reports, selected result CSVs |
+| `code/` | Public code anchors and run-status notes |
+| `assets/` | Selected figures used by project pages and evidence index |
+
 ## What Belongs In `projects/`
 
 Each project page should answer:
 
-- What market problem is being studied?
-- Why does it fit or not fit personal capital?
-- What is the baseline?
-- What evidence supports or weakens the idea?
-- What are the costs, execution assumptions, and failure modes?
-- What is the current decision: active, candidate, stabilizer, archive, or observation?
-- Where are the source code and outputs in the local research tree?
+- what market problem is being studied;
+- why it fits or does not fit personal capital;
+- what the baseline is;
+- what evidence supports or weakens the idea;
+- what costs, execution assumptions, and failure modes matter;
+- what the current decision is: active, candidate, stabilizer, archive, or observation;
+- where the public code, reports, result tables, and figures are.
 
-## What Belongs In `assets/`
+## What Belongs In `code/`
 
-Only selected reader-facing figures belong here:
+Use `code/` for scripts or modules that directly support a public claim.
 
-- strategy logic maps;
-- final scorecards;
-- key equity/drawdown charts;
-- robustness and parameter-neighborhood charts;
-- archive decision maps.
+Each code appendix should state:
 
-Avoid uploading large figure dumps. A GitHub reader should see the evidence chain, not every internal diagnostic.
+- whether it can run publicly;
+- what data is needed;
+- which reports/results it supports;
+- what is deliberately not included.
 
 ## What Does Not Belong Here
 
-- `.env`, API tokens, broker files, live order logs;
+- `.env`, API tokens, passwords, broker files, live order logs;
 - raw or licensed data;
 - full exchange caches;
-- local Office drafts;
-- temporary GPT-test directories unless converted into a clean evidence note;
-- strategy variants that were abandoned without a concise archive note.
-
+- local Office drafts, slide decks, PDFs;
+- current order plans or personal execution logs;
+- abandoned strategy variants without a concise archive note.

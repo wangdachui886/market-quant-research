@@ -2,53 +2,65 @@
 
 ## Reproducibility Promise
 
-This repository should make the research inspectable, not necessarily fully one-command reproducible from public raw data.
+This repository is inspectable-first. It does not promise that every strategy can be reproduced from public raw data with one command.
 
-For each public strategy, the minimum standard is:
+The minimum public standard is:
 
 - fixed rules and parameters;
 - data source description;
 - sample window;
 - execution and cost assumptions;
-- selected output tables or figures;
-- code/source anchors;
+- selected output tables and figures;
+- code anchors;
 - known limits and failure modes.
+
+## Minimal Environment
+
+```bash
+pip install -r requirements.txt
+```
+
+Core Python dependencies:
+
+```text
+pandas
+numpy
+matplotlib
+Pillow
+```
+
+## Can This Run?
+
+| Module | Public runnable? | Data needed |
+|---|---|---|
+| Crypto Spot Long-Only research scripts | Yes, for the public-data scripts | Internet access for Binance daily klines |
+| Crypto Spot Long-Only operational core | Partially | User-supplied OHLCV cache or generated spot data |
+| Convertible Bonds pre-live core | Partially | User-supplied convertible-bond panel, issue-size table, maturity/strong-call data |
+| Convertible Bonds historical research scripts | Inspectable, not standalone | Older private strategy package and private panel data |
+| ETF Stabilizer | Yes as function logic | User-supplied close/NAV DataFrames |
+| Smart DCA | Documentation only for now | Raw script not yet migrated as public code |
 
 ## Data Boundary
 
-Do not commit raw datasets unless the source is public, redistribution is allowed, and the file is small enough to serve a reader.
+Do not commit raw datasets unless the source is public, redistribution is allowed, and the file is small enough to help a reader.
 
-Use public notes instead:
+Allowed public result files:
 
-```text
-data source -> sample window -> fields used -> cleaning decisions -> known caveats
-```
+- aggregated metrics tables;
+- summary CSVs;
+- generated daily return series;
+- validation tables;
+- small candidate result tables;
+- selected figures that support a public claim.
 
-## Source Anchors
+Excluded files:
 
-Local source paths are included in the evidence index so the research can be traced during migration. Before public release, these should either be:
-
-- replaced by relative GitHub paths if the code is migrated;
-- or kept as "local source anchors" in a private migration note, not in the public README.
-
-## Public Code Standard
-
-Only migrate code that is:
-
-- readable without local secrets;
-- free of API keys and private paths;
-- accompanied by a short usage note;
-- aligned with the public conclusion;
-- not dependent on uncommittable raw data without explanation.
+- `.env`, tokens, API keys, passwords, broker credentials;
+- raw or licensed market data;
+- full caches such as `spot_data_cache/` and `.cache/`;
+- live order plans, broker files, personal execution logs;
+- Office documents, PDFs, slide decks, and temporary build outputs.
 
 ## Figures
 
-Figures in `assets/` are selected reader-facing evidence. They should be treated as published exhibits, not raw output dumps.
-
-Whenever possible, figure pages should mention:
-
-- which script generated the figure;
-- which sample window was used;
-- what conclusion the figure is allowed to support;
-- what it does not prove.
-
+Figures in `assets/` are selected published exhibits. They should be connected to a report, code path, or result table in [Evidence Index](evidence-index.md).

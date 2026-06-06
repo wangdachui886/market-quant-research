@@ -1,56 +1,32 @@
 # Migration Scope
 
-## Priority 1: Public Core
-
-These are necessary for the first GitHub release.
+## Public Core
 
 | Line | Include | Why |
 |---|---|---|
-| Convertible bonds | Strategy card, final metrics, sealed decision, time-split/rolling robustness, execution boundary, archive map | Strongest non-Crypto flagship line; complete evidence chain |
-| Crypto | Market reality, strategy triage, Spot Long-Only baseline, Smart DCA candidate, archived observations | Shows high-volatility market understanding and falsification discipline |
-| ETF Stabilizer | Stabilizer rule card, portfolio evidence, allocation sensitivity, common-window/data boundary, archive variants | Shows portfolio construction rather than only alpha search |
-| Portfolio bridge | 70/30 combined portfolio logic and monitoring focus | Connects the portfolio into one research system |
-| Code appendix | Convertible-bond `top12_keep37` core, Crypto Spot Long-Only baseline/validation, ETF target-weight logic | Gives GitHub enough code evidence without dumping every local experiment |
+| Convertible Bonds | Strategy card, final metrics, result CSVs, research reports, pre-live core, selected historical research scripts | Strongest non-Crypto flagship line; complete evidence chain |
+| Crypto Spot Long-Only | Market triage, scripts 01-11, reports, selected result CSVs, final validation, operational core | Active Crypto baseline with public-data path |
+| Smart DCA | Candidate reports and selected result table | Candidate accumulation framework, not a finalized code appendix |
+| ETF Stabilizer | Strategy card, final core, params, reports, selected result CSVs | Supporting stabilizer line for portfolio construction |
+| CB + ETF Bridge | Integration note and combined-portfolio tables | Connects the CB core and ETF sleeve without overstating it as the whole portfolio bridge |
 
-## Priority 2: Evidence Backfill
-
-These can be added after the first release.
-
-| Source | Public Form |
-|---|---|
-| Convertible-bond historical strategy source | Clean code appendix or selected reusable modules |
-| Convertible-bond final research outputs | Curated tables and short evidence notes |
-| Crypto Spot Long-Only final reports | Spot Long-Only technical appendix |
-| Smart DCA research docs | Smart DCA appendix |
-| ETF Stabilizer final implementation archive | ETF Stabilizer implementation appendix |
-
-## Priority 3: Archive / Optional Satellite
-
-These should remain lower profile.
+## Archive / Optional Satellite
 
 | Line | Public Decision |
 |---|---|
-| A-share small-cap | Archive as pre-research / observation; do not present as deployable core |
+| A-share Small-cap | Archive as pre-research / observation; do not present as deployable core |
 | Convertible-bond MA / breadth defense | Archive as observation; not a sealed timing alpha |
 | ETF right-side sleeve | Archive as mechanism test; did not beat same-vol buy-and-hold cleanly |
 | Crypto short leg / single-venue funding / grid / BOX / regime filter | Archive as strategy-triage evidence |
-
-## Code Included In The Current Scaffold
-
-| Public Code Directory | Source | Decision |
-|---|---|---|
-| `code/convertible-bonds/` | Convertible-bond pre-live core | Included; closest to current `top12_keep37` public conclusion |
-| `code/crypto/spot-long-only/` | Crypto Spot Long-Only final scripts | Included; active Crypto baseline and final validation |
-| `code/etf-stabilizer/` | ETF Stabilizer final core and sanitized params | Included; compact executable stabilizer logic |
-| Smart DCA raw script | Smart DCA raw research script | Not included yet; candidate needs cleanup because it fetches data and writes local cache |
-| A-share small-cap scripts | A-share small-cap pre-research scripts | Not included; archived pre-research, not core public code |
 
 ## Keep Private Or Out Of Repo
 
 - raw market data and caches;
 - live/pre-live broker operations;
-- `.env` files and API keys;
+- `.env` files, API keys, access tokens, passwords, and other secrets;
 - paid or restricted data;
-- personal execution logs;
-- intermediate Office documents;
+- current order plans and personal execution logs;
+- intermediate Office documents, slide decks, PDFs, and build artifacts;
 - old folders whose conclusions are superseded and not summarized.
+
+Internal migration notes live in [Migration Notes](migration-notes.md).

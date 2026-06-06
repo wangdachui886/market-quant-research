@@ -39,18 +39,15 @@ S&P 500 exposure also requires abs(close / NAV - 1) <= 5%.
 
 ![Combo evidence](../../assets/etf-stabilizer/etf_05_combo_evidence.png)
 
-## Allocation Sensitivity
+## Evidence Chain
 
-| CB / ETF | CAGR | MDD | Calmar | Reading |
-|---|---:|---:|---:|---|
-| 80 / 20 | 16.55% | -13.14% | 1.26 | Return engine heavier |
-| 70 / 30 | 15.49% | -10.77% | 1.44 | Balanced compromise |
-| 60 / 40 | 14.41% | -9.18% | 1.57 | More defensive |
-| 50 / 50 | 13.31% | -7.56% | 1.76 | Smoothest path, more alpha dilution |
-
-70/30 is not presented as globally optimal. It is a readable compromise between keeping convertible bonds as the return engine and giving ETF enough weight to materially reduce drawdown.
-
-![Allocation sensitivity](../../assets/etf-stabilizer/etf_09_allocation_sensitivity.png)
+| Stage | Public Evidence |
+|---|---|
+| Strategy rule and role | [strategy card](reports/ETF_Stabilizer_V1_策略卡.md), [final combo validation](reports/01_final_combo_validation_zh.md) |
+| Variant checks | [short fallback validation](reports/02_short_fallback_validation_zh.md), [lookback stability](reports/03_lookback_stability_zh.md), [fallback gold shift](reports/04_fallback_gold_shift_test_zh.md) |
+| Archive boundary | [archive note](reports/研究归档说明.md) |
+| Result tables | [selected ETF result CSVs](results/) |
+| Code path | [ETF Stabilizer code appendix](../../code/etf-stabilizer/README.md) |
 
 ## Archive Boundary
 
@@ -58,9 +55,7 @@ Top3 momentum, right-side ETF sleeve, short-financing variants, and more aggress
 
 ![Archive map](../../assets/etf-stabilizer/etf_07_archive_map.png)
 
-## Code And Evidence Anchors
+## Public Evidence Anchors
 
-- [Code appendix](../../code/etf-stabilizer/README.md)
-- Public evidence index: [Evidence Index](../../docs/evidence-index.md)
-- Notion hub: ETF Allocation & Portfolio Stabilizer Hub
-- Local source family before public migration: ETF Stabilizer final implementation and archived ETF variants
+- [Evidence Index](../../docs/evidence-index.md)
+- [CB + ETF Bridge](../cb-etf-bridge/README.md)

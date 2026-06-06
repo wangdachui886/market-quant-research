@@ -12,8 +12,6 @@ This line studies whether a structurally constrained market can support a resear
 
 Status: research-frozen candidate, pre-live validation required.
 
-The current public version is:
-
 ```text
 top12_keep37
 weekly rebalance
@@ -36,13 +34,16 @@ buy top 12; retain existing holdings while still within top 37
 
 ![Final scorecard](../../assets/convertible-bonds/cb_02_final_scorecard.png)
 
-## Why This Is A Flagship Line
+## Research Chain
 
-- It starts from market fit, not from a parameter search.
-- It has a clear return-source hypothesis.
-- It compares baseline, filters, momentum, retention control, cost, execution lag, and robustness.
-- It keeps rejected defensive filters visible instead of hiding them.
-- It is strong enough to support portfolio-level construction with ETF Stabilizer.
+| Stage | Public Evidence |
+|---|---|
+| Market fit and strategy frame | [01 Strategy Framework](reports/01_strategy_framework.md), [02 Research Journey](reports/02_research_journey_0_to_1_to_1plus.md) |
+| Final performance | [03 Final Performance Report](reports/03_final_performance_report.md), [00 Sealed Final](reports/00_SEALED_FINAL.md) |
+| Pre-live and technical assessment | [04 Pre-live Playbook](reports/04_pre_live_playbook.md), [05 Technical Assessment](reports/05_technical_assessment.md), [06 Capital and Risk Plan](reports/06_capital_and_risk_plan.md) |
+| Robustness and retention audit | [Focused Validation](reports/topk_keepn_focused_validation_summary.md), [Stability Audit](reports/topk_keepn_stability_audit_summary.md) |
+| Code path | [pre-live core](../../code/convertible-bonds/README.md), [historical research scripts](../../code/convertible-bonds/research-scripts/) |
+| Result tables | [final outputs](results/final/), [validation tables](results/validation/) |
 
 ## Boundaries
 
@@ -52,9 +53,8 @@ The strategy remains long-only and still carries convertible-bond/equity beta. E
 
 ![Archive decision map](../../assets/convertible-bonds/cb_17_archive_decision_map.png)
 
-## Code And Evidence Anchors
+## Public Evidence Anchors
 
-- [Code appendix](../../code/convertible-bonds/README.md)
-- Public evidence index: [Evidence Index](../../docs/evidence-index.md)
-- Notion hub: China Convertible Bond Research Hub
-- Local source family before public migration: convertible-bond final archive and pre-live core
+- [Evidence Index](../../docs/evidence-index.md)
+- [Data & Reproducibility](../../docs/data-and-reproducibility.md)
+- [CB + ETF Bridge](../cb-etf-bridge/README.md)

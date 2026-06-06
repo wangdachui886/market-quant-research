@@ -43,5 +43,5 @@ Do not continue this line by adding more stock-level hard filters just to rescue
 
 ## Evidence Anchors
 
-- Public evidence index: [Evidence Index](../../docs/evidence-index.md)
-- Local source family before public migration: A-share small-cap pre-research reports and final archive note
+- [Portfolio Map](../../docs/portfolio-map.md)
+- [Evidence Index](../../docs/evidence-index.md)

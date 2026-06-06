@@ -1,25 +1,41 @@
 # Market Quant Research Portfolio
 
-This repository is the evidence layer for my market quant research portfolio.
+This repository is the technical evidence layer for my market quant research portfolio.
 
-The Notion portfolio is the public reading interface. This GitHub repository is the structured research archive: strategy cards, evidence maps, reproducibility notes, selected figures, source anchors, and archive decisions.
+Notion is the public reading interface. GitHub is the inspectable research archive: code, selected result tables, research reports, evidence maps, reproducibility notes, and archive decisions.
 
-本仓库是 Notion 作品集的证据层。Notion 负责阅读体验和叙事，GitHub 负责研究结构、代码锚点、数据口径、图表来源、复现说明和归档纪律。
+本仓库是 Notion 量化研究作品集的技术证据层。Notion 负责叙事和阅读体验；GitHub 负责把研究过程、代码锚点、结果表、图表来源和归档纪律放到可检查的位置。
 
 ## Start Here
 
-| Section | Role | Status |
+| Section | Role | Current Status |
 |---|---|---|
+| [Portfolio Map](docs/portfolio-map.md) | One-page map of the whole research portfolio | Entry point |
 | [China Convertible Bonds](projects/convertible-bonds/README.md) | Flagship structural-alpha research line | Research-frozen / pre-live validation |
 | [Crypto Quant Research](projects/crypto/README.md) | Flagship high-volatility market research line | Active baseline + candidate + archives |
-| [ETF Stabilizer](projects/etf-stabilizer/README.md) | Portfolio stabilizer beside the convertible-bond core | Sealed stabilizer candidate |
-| [Portfolio Bridge](projects/portfolio-bridge/README.md) | Converts single-strategy evidence into portfolio construction | Current public bridge |
+| [ETF Stabilizer](projects/etf-stabilizer/README.md) | Supporting portfolio-stabilizer sleeve | Sealed stabilizer candidate |
+| [CB + ETF Bridge](projects/cb-etf-bridge/README.md) | Bridge between the convertible-bond core and ETF sleeve | Portfolio construction evidence |
 | [A-share Small-cap Archive](projects/a-share-small-cap-archive/README.md) | Pre-research archive and falsification evidence | Archived / observation only |
-| [Code Appendix](code/README.md) | Curated scripts only, no raw data or secrets | Public code appendix |
+| [Code Appendix](code/README.md) | Public code anchors and run-status notes | Inspectable code appendix |
 
-## Repository Logic
+## Portfolio Research Map
 
-The portfolio is not built around one lucky return curve. It is built around a repeated research process:
+The portfolio is not one strategy page with several attachments. It is a research system with different roles:
+
+| Layer | Research Line | What It Proves |
+|---|---|---|
+| Flagship A | Convertible Bonds | Market fit, structural edge, cost/execution realism, robustness, and pre-live discipline |
+| Flagship B | Crypto Spot Long-Only | High-volatility market triage, right-tail participation, failure boundaries, and public-data validation |
+| Candidate | Smart DCA | Accumulation discipline for capital that already wants BTC exposure; not a finished alpha claim |
+| Supporting Sleeve | ETF Stabilizer | Portfolio-level drawdown control and allocation thinking, not standalone alpha hunting |
+| Bridge | CB + ETF | How a lower-return sleeve can improve the total capital curve beside the convertible-bond core |
+| Archive | A-share Small-cap and failed modules | Evidence that weak or unfitted ideas are narrowed or archived instead of over-optimized |
+
+The convertible-bond logic map now lives inside the [Convertible Bonds project](projects/convertible-bonds/README.md), because it explains that line specifically, not the whole portfolio.
+
+## Research Process
+
+Across markets, the process is:
 
 1. define whether the market fits real individual-investor constraints;
 2. identify a plausible return source before writing strategy code;
@@ -27,43 +43,45 @@ The portfolio is not built around one lucky return curve. It is built around a r
 4. evaluate costs, execution, robustness, and failure modes;
 5. promote, narrow, or archive the research line.
 
-This repository keeps that process visible. Failed or downgraded ideas are not hidden, because they explain what the final choices are not trying to do.
+Failed or downgraded ideas stay visible because they explain what the final choices are not trying to do.
 
-## Current Research Map
+## Minimal Run Path
 
-![Convertible bond logic](assets/convertible-bonds/cb_logic_map.svg)
+```bash
+pip install -r requirements.txt
+python code/crypto/spot-long-only/research-scripts/02_spot_universe_baseline.py
+python code/crypto/spot-long-only/research-scripts/10_final_predeployment_validation.py
+python code/convertible-bonds/run_final_backtest.py
+```
 
-The current public structure is:
+The Crypto Spot Long-Only scripts can fetch public Binance daily klines. Convertible-bond and ETF modules need user-supplied local CSV/DataFrame inputs because the raw data is private, licensed, or not redistributed here. See [Data & Reproducibility](docs/data-and-reproducibility.md).
 
-- Convertible bonds and Crypto are the two flagship lines.
-- ETF is a supporting portfolio-stabilizer line.
-- The bridge page explains why a lower-return sleeve can still improve the full capital curve.
-- A-share small-cap remains a pre-research archive, not a core public strategy line.
+## Reader Path
+
+For a quick public read:
+
+1. [Portfolio Map](docs/portfolio-map.md)
+2. [Convertible Bonds](projects/convertible-bonds/README.md)
+3. [Crypto](projects/crypto/README.md)
+4. [ETF Stabilizer](projects/etf-stabilizer/README.md)
+5. [CB + ETF Bridge](projects/cb-etf-bridge/README.md)
+
+For a reviewer checking research discipline:
+
+1. [Research Governance](docs/research-governance.md)
+2. [Evidence Index](docs/evidence-index.md)
+3. [Data & Reproducibility](docs/data-and-reproducibility.md)
+4. [Migration Notes](docs/migration-notes.md)
+
+For a reviewer checking code:
+
+1. [Code Appendix](code/README.md)
+2. [Convertible Bonds Code](code/convertible-bonds/README.md)
+3. [Crypto Spot Long-Only Code](code/crypto/spot-long-only/README.md)
+4. [ETF Stabilizer Code](code/etf-stabilizer/README.md)
 
 ## Publication Boundary
 
 This repository is for research presentation and education. It is not investment advice, solicitation, live trading instruction, or a promise that any strategy will remain profitable.
 
-Raw data, API keys, broker/live-trading files, licensed datasets, and personal execution records should not be committed here. See [Migration Scope](docs/migration-scope.md) and [Data & Reproducibility](docs/data-and-reproducibility.md).
-
-## Reader Path
-
-For a quick public read, start with:
-
-1. [Portfolio Bridge](projects/portfolio-bridge/README.md)
-2. [Convertible Bonds](projects/convertible-bonds/README.md)
-3. [Crypto](projects/crypto/README.md)
-4. [ETF Stabilizer](projects/etf-stabilizer/README.md)
-
-For a reviewer who wants to check research discipline, start with:
-
-1. [Evidence Index](docs/evidence-index.md)
-2. [Research Governance](docs/research-governance.md)
-3. [Migration Scope](docs/migration-scope.md)
-4. [GitHub Release Checklist](docs/github-release-checklist.md)
-
-For a reviewer who wants code anchors, start with:
-
-1. [Convertible Bonds Code](code/convertible-bonds/README.md)
-2. [Crypto Spot Long-Only Code](code/crypto/spot-long-only/README.md)
-3. [ETF Stabilizer Code](code/etf-stabilizer/README.md)
+Raw data, API keys, broker/live-trading files, `.env` files, licensed datasets, personal execution records, and current order plans should not be committed here.

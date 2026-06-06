@@ -12,8 +12,8 @@ This research therefore starts from slower daily/weekly signals that can be audi
 
 | Role | Research Line | Decision |
 |---|---|---|
-| Active baseline | Spot Long-Only Trend Sleeve | Current right-side baseline |
-| Candidate | Smart DCA / Mayer Accumulation | Candidate accumulation framework |
+| Active baseline | [Spot Long-Only Trend Sleeve](spot-long-only/README.md) | Current right-side baseline |
+| Candidate | [Smart DCA / Mayer Accumulation](smart-dca-candidate/README.md) | Candidate accumulation framework |
 | Observation | Cross-section | Regime-dependent observation |
 | Archived | Short leg, single-venue funding carry, grid, BOX, regime filter | Not retained as core |
 
@@ -47,15 +47,7 @@ Key predeployment evidence:
 
 Smart DCA asks whether capital that already plans to accumulate BTC can buy with more discipline than fixed weekly DCA.
 
-| Metric | Smart v0 | Smart v0t | Fixed DCA |
-|---|---:|---:|---:|
-| End NAV | 289,281.92 | 278,707.99 | 131,205.89 |
-| CAGR | 40.78% | 39.95% | 24.22% |
-| Sharpe | 1.018 | 1.019 | 0.711 |
-| Calmar | 0.745 | 0.707 | 0.366 |
-| Max DD | -54.71% | -56.49% | -66.10% |
-
-This remains a candidate, not a finished alpha claim.
+This remains a candidate, not a finished alpha claim. It has public documentation and selected result tables, but its raw script is not yet promoted into the public code appendix.
 
 ![Smart DCA evidence](../../assets/crypto/01_smart_dca_vs_fixed_dca_evidence.png)
 
@@ -69,9 +61,9 @@ Archived Crypto ideas are useful because they show where common intuition breaks
 - grid/BOX ideas can look obvious after the path is complete but fail ex ante;
 - regime filters can repair one bear market while damaging trend participation.
 
-## Code And Evidence Anchors
+## Public Evidence Anchors
 
+- [Spot Long-Only project page](spot-long-only/README.md)
 - [Spot Long-Only code appendix](../../code/crypto/spot-long-only/README.md)
-- Public evidence index: [Evidence Index](../../docs/evidence-index.md)
-- Notion hub: Crypto Quant Research Hub
-- Local source family before public migration: Crypto Spot Long-Only, Smart DCA, and archived strategy triage research
+- [Smart DCA candidate page](smart-dca-candidate/README.md)
+- [Evidence Index](../../docs/evidence-index.md)

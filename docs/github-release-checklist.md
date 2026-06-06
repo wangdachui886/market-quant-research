@@ -1,41 +1,48 @@
 # GitHub Release Checklist
 
-## Before Creating The Remote Repository
-
-- Choose repo visibility: public portfolio repo or private staging repo first.
-- Choose repository name. Current local default: `market-quant-research-portfolio`.
-- Decide whether source-code migration is part of v1 or a later release.
-- Confirm whether Windows local source paths should remain in public docs or be moved to a private migration note.
-
 ## Content Checks
 
 - README explains the relationship between Notion and GitHub.
+- README starts from the whole portfolio map, not from a single strategy line.
+- CB + ETF Bridge is clearly scoped to the convertible-bond core and ETF sleeve.
 - Each main project has a public decision label.
 - Key figures render from `assets/`.
-- Evidence tables match the latest Notion portfolio claims.
+- Evidence tables match the latest public portfolio claims.
 - Archive pages do not sound like hidden strategy promotions.
 - A-share small-cap remains archive / observation only.
+- Every code appendix states `Can this run?` and lists data requirements.
+
+## Evidence Checks
+
+- Public claims link to reports, result CSVs, code paths, and figures.
+- `docs/evidence-index.md` contains public evidence only.
+- Internal source-family or migration notes stay in `docs/migration-notes.md`.
+- Result CSVs are selected evidence tables, not full raw-data dumps.
+- Current selections, current order plans, and personal execution records are excluded.
 
 ## Safety Checks
 
-- No `.env`, API token, broker file, live order log, or personal execution log.
+- No `.env`, API key, access token, bearer token, password, or secret string.
+- No broker file, live order log, personal execution log, or current order plan.
 - No raw data cache or restricted dataset.
-- No Office draft files.
+- No `spot_data_cache/`, `.cache/`, `__pycache__/`, or logs.
+- No Office draft files, slide decks, PDFs, or build artifacts.
 - No claims of trading advice, live-readiness, or guaranteed future performance.
 - `.gitignore` blocks common sensitive and heavy file types.
 
-## Suggested First GitHub Release
+## Suggested Release Scope
 
-Version: `v0.1-portfolio-structure`
+Version: `v0.3-evidence-and-code-backfill`
 
 Scope:
 
-- portfolio-level README;
-- repository structure docs;
-- migration scope and evidence index;
-- four public project sections;
-- selected figures only.
-- curated code appendix only: convertible-bond final core, Crypto Spot Long-Only baseline/validation, ETF Stabilizer core.
+- portfolio-level README and map;
+- corrected CB + ETF bridge naming;
+- public evidence index;
+- requirements and minimal run notes;
+- selected reports and result CSVs;
+- curated code appendix for convertible bonds, Crypto Spot Long-Only, and ETF Stabilizer;
+- Smart DCA candidate documentation only.
 
 Do not include:
 
@@ -43,17 +50,3 @@ Do not include:
 - full old research folders;
 - live/pre-live broker materials;
 - uncleaned code with local paths or secrets.
-
-## Suggested Second Release
-
-Version: `v0.2-code-appendix`
-
-Scope:
-
-- selected clean strategy modules;
-- minimal usage notes;
-- reproducibility appendix;
-- public sample outputs;
-- optional notebook-free scripts.
-
-Only add code after each file can be understood by an external reader without the original local workstation.
