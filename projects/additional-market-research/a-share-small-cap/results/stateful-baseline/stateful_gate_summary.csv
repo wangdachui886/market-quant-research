@@ -1,0 +1,4 @@
+gate,status,detail
+Stateful Execution Gate,Green,"Monthly portfolio with failed buys as cash, failed sells held, and suspension days frozen."
+Stateful Regime Gate,Green,Positive regime-strategy cells: 8/10.
+Risk Realism Gate,Yellow,"Checks max drawdown, worst 12-month return, forced-state PnL attribution, and simple 10/30bps turnover cost stress."

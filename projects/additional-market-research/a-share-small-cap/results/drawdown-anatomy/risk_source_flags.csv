@@ -1,0 +1,11 @@
+period,losing_or_deep_drawdown,market_beta_drawdown,small_cap_relative_drawdown,execution_drawdown,liquidity_crash,idiosyncratic_concentration,primary_read
+full_sample,True,False,False,True,True,False,execution_liquidity
+max_drawdown_window,True,True,False,True,True,False,systemic_beta_first
+worst_12m_window,True,True,False,True,True,False,market_beta_dominant
+ex_2008,True,False,False,True,True,False,execution_liquidity
+2008,True,True,False,True,True,False,systemic_beta_first
+2016-2018,True,True,False,True,True,False,weak_market_plus_execution
+2022-2025,True,False,False,False,False,False,mixed_or_not_loss
+2005-2013,True,False,False,True,True,False,execution_liquidity
+2014-2015,True,False,False,True,True,True,execution_liquidity
+2019-2021,True,False,False,False,False,False,mixed_or_not_loss

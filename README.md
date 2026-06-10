@@ -17,7 +17,7 @@ See [DISCLAIMER](DISCLAIMER.md) and [LICENSE](LICENSE) before reusing any materi
 | [Crypto Quant Research](projects/crypto/README.md) | Flagship high-volatility market research line | Active baseline + candidate + archives |
 | [ETF Stabilizer](projects/etf-stabilizer/README.md) | Supporting portfolio-stabilizer sleeve | Sealed stabilizer candidate |
 | [CB + ETF Bridge](projects/cb-etf-bridge/README.md) | Bridge between the convertible-bond core and ETF sleeve | Portfolio construction evidence |
-| [A-share Small-cap Archive](projects/a-share-small-cap-archive/README.md) | Pre-research archive and falsification evidence | Archived / observation only |
+| [Additional Market Research](projects/additional-market-research/README.md) | Futures CTA and A-share small-cap market-fit archive | Archived / observation only |
 | [Code Appendix](code/README.md) | Public code anchors and run-status notes | Inspectable code appendix |
 
 ## Portfolio Research Map
@@ -31,7 +31,7 @@ The portfolio is not one strategy page with several attachments. It is a researc
 | Candidate | Smart DCA | Accumulation discipline for capital that already wants BTC exposure; not a finished alpha claim |
 | Supporting Sleeve | ETF Stabilizer | Portfolio-level drawdown control and allocation thinking, not standalone alpha hunting |
 | Bridge | CB + ETF | How a lower-return sleeve can improve the total capital curve beside the convertible-bond core |
-| Archive | A-share Small-cap and failed modules | Evidence that weak or unfitted ideas are narrowed or archived instead of over-optimized |
+| Archive | Futures CTA, A-share Small-cap, and failed modules | Evidence that good-but-unfitted ideas are narrowed or archived instead of over-optimized |
 
 The convertible-bond logic map now lives inside the [Convertible Bonds project](projects/convertible-bonds/README.md), because it explains that line specifically, not the whole portfolio.
 
@@ -74,6 +74,7 @@ For a quick public read:
 3. [Crypto](projects/crypto/README.md)
 4. [ETF Stabilizer](projects/etf-stabilizer/README.md)
 5. [CB + ETF Bridge](projects/cb-etf-bridge/README.md)
+6. [Additional Market Research](projects/additional-market-research/README.md)
 
 For a reviewer checking research discipline:
 
@@ -89,6 +90,8 @@ For a reviewer checking code:
 2. [Convertible Bonds Code](code/convertible-bonds/README.md)
 3. [Crypto Spot Long-Only Code](code/crypto/spot-long-only/README.md)
 4. [ETF Stabilizer Code](code/etf-stabilizer/README.md)
+5. [Futures CTA Code](code/futures-cta/README.md)
+6. [A-share Small-cap Code](code/a-share-small-cap/README.md)
 
 ## Publication Boundary
 

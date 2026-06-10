@@ -1,0 +1,21 @@
+strategy,check,status,strategy_value,baseline_or_threshold,verdict,passed_checks,total_checks
+rpe_top100,30bps cost remains positive,Pass,0.2450522591699873,0.0,Fail,7,10
+rpe_top100,ann_return not materially below baseline,Pass,0.26225830663504457,0.3072190705431266,Fail,7,10
+rpe_top100,2016-2018 not worse than baseline,Fail,-0.16317214866458152,-0.15782751758811864,Fail,7,10
+rpe_top100,worst_12m_ex_2008 not worse than baseline,Fail,-0.48025679555630185,-0.4531635687626596,Fail,7,10
+rpe_top100,max_drawdown not materially worse,Pass,-0.6904923090740019,-0.6696619614956734,Fail,7,10
+rpe_top100,sell_fail_rate not materially worse,Fail,0.15778839088905217,0.1182996269389358,Fail,7,10
+rpe_top100,suspended days not materially worse,Pass,16523.0,20761.0,Fail,7,10
+rpe_top100,forced_state_pnl not worse,Pass,0.010292405777997518,-0.12712477944108594,Fail,7,10
+rpe_top100,median amount not much lower,Pass,41413246.49625,34549557.887499996,Fail,7,10
+rpe_top100,median float mcap not much smaller,Pass,2527309907.895,1298140871.0700002,Fail,7,10
+size_controlled_rpe_top100,30bps cost remains positive,Pass,0.2600101377797277,0.0,Borderline,9,10
+size_controlled_rpe_top100,ann_return not materially below baseline,Pass,0.27980552554286686,0.3072190705431266,Borderline,9,10
+size_controlled_rpe_top100,2016-2018 not worse than baseline,Pass,-0.1438171066225713,-0.15782751758811864,Borderline,9,10
+size_controlled_rpe_top100,worst_12m_ex_2008 not worse than baseline,Fail,-0.4668892394217373,-0.4531635687626596,Borderline,9,10
+size_controlled_rpe_top100,max_drawdown not materially worse,Pass,-0.6864616060456945,-0.6696619614956734,Borderline,9,10
+size_controlled_rpe_top100,sell_fail_rate not materially worse,Pass,0.1424342105263158,0.1182996269389358,Borderline,9,10
+size_controlled_rpe_top100,suspended days not materially worse,Pass,16474.0,20761.0,Borderline,9,10
+size_controlled_rpe_top100,forced_state_pnl not worse,Pass,0.03669186573228411,-0.12712477944108594,Borderline,9,10
+size_controlled_rpe_top100,median amount not much lower,Pass,40449771.682,34549557.887499996,Borderline,9,10
+size_controlled_rpe_top100,median float mcap not much smaller,Pass,2358421225.08,1298140871.0700002,Borderline,9,10

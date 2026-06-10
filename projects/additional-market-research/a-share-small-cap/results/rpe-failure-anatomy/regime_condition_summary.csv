@@ -1,0 +1,11 @@
+strategy,small_trend,risk_appetite,market_strength,mean_excess_vs_baseline,years
+rpe_top100,small_down,small_beats_large,market_weak,-0.005615434387483714,4
+rpe_top100,small_down,small_lags_large,market_weak,0.036177976948429724,1
+rpe_top100,small_up,small_beats_large,market_strong,-0.1297661626135015,12
+rpe_top100,small_up,small_beats_large,market_weak,0.062230812599657646,3
+rpe_top100,small_up,small_lags_large,market_strong,0.09555795060946304,1
+size_controlled_rpe_top100,small_down,small_beats_large,market_weak,0.009951420481305318,4
+size_controlled_rpe_top100,small_down,small_lags_large,market_weak,0.060968055531990584,1
+size_controlled_rpe_top100,small_up,small_beats_large,market_strong,-0.11359814805794378,12
+size_controlled_rpe_top100,small_up,small_beats_large,market_weak,0.07354495142338717,3
+size_controlled_rpe_top100,small_up,small_lags_large,market_strong,0.10761050980541031,1

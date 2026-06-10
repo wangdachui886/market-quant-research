@@ -42,6 +42,8 @@ Pillow
 | Convertible Bonds historical research scripts | Inspectable, not standalone | Older private strategy package and private panel data |
 | ETF Stabilizer | Yes as function logic | User-supplied close/NAV DataFrames |
 | Smart DCA | Documentation only for now | Raw script not yet migrated as public code |
+| Futures CTA archive | Partially | User-supplied clean futures returns and carry series; credentialed data fetchers excluded |
+| A-share Small-cap archive | Partially | User-supplied raw A-share market/finance files and processed PIT panels |
 
 Small public input contracts are documented in [Input Schemas](input-schemas.md). These schema notes list expected columns only; they do not include real private or licensed market data.
 
@@ -63,6 +65,7 @@ Excluded files:
 - `.env`, tokens, API keys, passwords, broker credentials;
 - raw or licensed market data;
 - full caches such as `spot_data_cache/` and `.cache/`;
+- futures `data_cache/` directories and A-share `processed/` private panels;
 - live order plans, broker files, personal execution logs;
 - Office documents, PDFs, slide decks, and temporary build outputs.
 

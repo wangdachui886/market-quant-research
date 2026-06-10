@@ -37,7 +37,16 @@ market-quant-research/
     cb-etf-bridge/
       reports/
       results/
-    a-share-small-cap-archive/
+    additional-market-research/
+      futures-cta/
+        reports/
+        results/
+        figures/
+      a-share-small-cap/
+        reports/
+        results/
+        figures/
+    a-share-small-cap-archive/  # legacy redirect
   code/
     convertible-bonds/
       cb_pre_live_core/
@@ -47,6 +56,8 @@ market-quant-research/
         research-scripts/
         spot_trend_core/
     etf-stabilizer/
+    futures-cta/
+    a-share-small-cap/
   assets/
     convertible-bonds/
     crypto/

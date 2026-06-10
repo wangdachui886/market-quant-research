@@ -1,0 +1,11 @@
+﻿strategy,target_sharpe,min_capital
+Pool_filtered_19,0.3,10 万
+Pool_filtered_19,0.5,300 万
+Pool_filtered_19,0.6,300 万
+Pool_filtered_19,0.8,300 万
+Pool_filtered_19,1.0,1000 万
+Pool_on_14,0.3,50 万
+Pool_on_14,0.5,300 万
+Pool_on_14,0.6,> 1000万 (扫描内未通过)
+Pool_on_14,0.8,> 1000万 (扫描内未通过)
+Pool_on_14,1.0,> 1000万 (扫描内未通过)

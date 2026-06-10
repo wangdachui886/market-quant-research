@@ -1,0 +1,4 @@
+strategy,selected_p10_20,selected_p20_30,selected_p30_40,selected_p40_50
+baseline_size_10_50_top100,100.0,0.0,0.0,0.0
+rpe_top100,19.0,25.0,27.0,28.0
+size_controlled_rpe_top100,25.0,25.0,25.0,25.0

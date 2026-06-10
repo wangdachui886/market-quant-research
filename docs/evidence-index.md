@@ -57,7 +57,38 @@ This line is documentation/candidate only until the raw script is cleaned into a
 |---|---|---|---|
 | ETF sleeve improves the full capital curve beside the CB core | [CB integration note](../projects/cb-etf-bridge/reports/可转债整合说明.md), [combo validation](../projects/cb-etf-bridge/reports/01_final_combo_validation_zh.md) | [combo practical table](../projects/cb-etf-bridge/results/etf_final_cb_combo_practical.csv), [common-window summary](../projects/cb-etf-bridge/results/etf_final_cb_common_window_summary.csv), [decision table](../projects/cb-etf-bridge/results/etf_final_cb_decision.csv) | [portfolio bridge](../assets/portfolio-bridge/portfolio_bridge.svg) |
 
-## A-share Small-cap Archive
+## Additional Market Research Archive
+
+These lines are serious research archives, not flagship candidates.
+
+### Futures CTA
+
+Public decision:
+
+```text
+Archive because personal capital granularity failed.
+Do not promote now, even though the signal structure is credible.
+```
+
+| Public Claim | Reports | Result Tables / Code | Figures |
+|---|---|---|---|
+| Clean futures return construction matters; hard-spliced contracts create fake jumps | [data pitfalls](../projects/additional-market-research/futures-cta/reports/01_data_pitfalls.md), [Phase 2.1 findings](../projects/additional-market-research/futures-cta/reports/03_phase_2_1_findings.md) | [clean summary](../projects/additional-market-research/futures-cta/results/phase-2-0-universe/14_all_symbols_clean_summary.csv), [clean-return code](../code/futures-cta/Phase_2_0_universe/) | [clean vs raw NAV](../projects/additional-market-research/futures-cta/figures/13_M_clean_vs_raw_nav.png), [raw vs clean grid](../projects/additional-market-research/futures-cta/figures/15_raw_vs_clean_nav_grid.png) |
+| TSMOM and Carry both showed usable standalone structure | [TSMOM findings](../projects/additional-market-research/futures-cta/reports/05_phase_2_2_findings.md), [Carry findings](../projects/additional-market-research/futures-cta/reports/07_phase_2_3_findings.md) | [TSMOM table](../projects/additional-market-research/futures-cta/results/phase-2-2-tsmom/tsmom_universe_voltarget_per_symbol.csv), [pooled table](../projects/additional-market-research/futures-cta/results/phase-2-3-carry/pooled_per_symbol.csv), [CTA code](../code/futures-cta/README.md) | [TSMOM figure](../projects/additional-market-research/futures-cta/figures/tsmom_universe_voltarget.png), [pooled figure](../projects/additional-market-research/futures-cta/figures/pooled_compare.png) |
+| Pooling improved OOS risk efficiency, but headline should be decomposed | [robustness findings](../projects/additional-market-research/futures-cta/reports/08_phase_2_4_findings.md) | [OOS metrics](../projects/additional-market-research/futures-cta/results/phase-2-4-robustness/oos_filtered_metrics.csv), [OOS decomposition](../projects/additional-market-research/futures-cta/results/phase-2-4-robustness/oos_decompose_metrics.csv), [cost sweep](../projects/additional-market-research/futures-cta/results/phase-2-4-robustness/cost_sweep_metrics.csv) | [OOS decomposition](../projects/additional-market-research/futures-cta/figures/oos_decompose.png), [cost sweep](../projects/additional-market-research/futures-cta/figures/cost_sweep.png) |
+| First usable personal-capital zone was roughly CNY 3m+ | [capital findings](../projects/additional-market-research/futures-cta/reports/09_phase_2_4b_2_5a_findings.md) | [capital ladder metrics](../projects/additional-market-research/futures-cta/results/phase-2-5-capital/capital_ladder_metrics.csv), [capital verdict](../projects/additional-market-research/futures-cta/results/phase-2-5-capital/capital_ladder_verdict.csv), [capital code](../code/futures-cta/Phase_2_5_capital/run_capital_ladder.py) | [capital ladder](../projects/additional-market-research/futures-cta/figures/capital_ladder.png) |
+
+Key public metrics:
+
+| Test | Result |
+|---|---:|
+| 0.5 TSMOM + 0.5 Carry Sharpe | 0.86 |
+| 19-symbol Pool OOS Sharpe | 1.27 |
+| 17-symbol no-gold/silver OOS edge vs TSMOM | +0.49 |
+| 14-symbol carry-valid OOS edge vs TSMOM | +0.61 |
+| CNY 3m capital-ladder Sharpe | 0.88 |
+| CNY 10m capital-ladder Sharpe | 1.06 |
+
+### A-share Small-cap
 
 Public decision:
 
@@ -65,3 +96,23 @@ Public decision:
 Archive as observation / future optional satellite.
 Do not promote to core strategy research now.
 ```
+
+| Public Claim | Reports | Result Tables / Code | Figures |
+|---|---|---|---|
+| The low-frequency small-cap gross engine was strong | [stateful baseline](../projects/additional-market-research/a-share-small-cap/reports/pre_research_v2_stateful_portfolio_zh.md) | [stateful summary](../projects/additional-market-research/a-share-small-cap/results/stateful-baseline/stateful_summary.csv), [stateful daily returns](../projects/additional-market-research/a-share-small-cap/results/stateful-baseline/stateful_daily_returns.csv), [baseline code](../code/a-share-small-cap/research/pre_research/run_pre_research_v2_stateful_portfolio.py) | [stateful NAV](../projects/additional-market-research/a-share-small-cap/figures/stateful_portfolio_nav.png), [stateful drawdown](../projects/additional-market-research/a-share-small-cap/figures/stateful_portfolio_drawdown.png) |
+| Drawdown and sell-fail risk were structural, not only a few bad stocks | [drawdown anatomy](../projects/additional-market-research/a-share-small-cap/reports/baseline_drawdown_anatomy_v2_zh.md) | [risk-source summary](../projects/additional-market-research/a-share-small-cap/results/drawdown-anatomy/risk_source_period_summary.csv), [loss concentration](../projects/additional-market-research/a-share-small-cap/results/drawdown-anatomy/code_loss_concentration.csv), [drawdown code](../code/a-share-small-cap/research/pre_research/run_baseline_drawdown_anatomy_v2.py) | [forced loss share](../projects/additional-market-research/a-share-small-cap/figures/baseline_v2_forced_loss_share.png), [market-style drawdown](../projects/additional-market-research/a-share-small-cap/figures/baseline_v2_market_style_drawdown.png) |
+| RPE had signal evidence but failed to replace the baseline portfolio | [RPE diagnostic](../projects/additional-market-research/a-share-small-cap/reports/rpe_factor_v1_diagnostics_zh.md), [RPE stateful](../projects/additional-market-research/a-share-small-cap/reports/rpe_stateful_portfolio_v1_zh.md) | [RPE IC](../projects/additional-market-research/a-share-small-cap/results/rpe-diagnostics/rpe_ic_full.csv), [RPE pass/fail](../projects/additional-market-research/a-share-small-cap/results/rpe-stateful/rpe_stateful_pass_fail_checks.csv), [RPE code](../code/a-share-small-cap/research/pre_research/run_rpe_stateful_portfolio_v1.py) | [RPE NAV](../projects/additional-market-research/a-share-small-cap/figures/rpe_stateful_nav.png), [RPE drawdown](../projects/additional-market-research/a-share-small-cap/figures/rpe_stateful_drawdown.png) |
+| RPE did not improve future quality in the tested branch | [RPE failure anatomy](../projects/additional-market-research/a-share-small-cap/reports/rpe_failure_anatomy_v1_zh.md) | [future fundamentals](../projects/additional-market-research/a-share-small-cap/results/rpe-failure-anatomy/future_fundamental_by_strategy.csv), [failure code](../code/a-share-small-cap/research/pre_research/run_rpe_failure_anatomy_v1.py) | [future profit YoY](../projects/additional-market-research/a-share-small-cap/figures/future_profit_yoy_by_strategy.png) |
+| Execution/liquidity guards and size migration did not solve core-book risk fit | [guard report](../projects/additional-market-research/a-share-small-cap/reports/execution_liquidity_guard_v1_zh.md), [size ladder report](../projects/additional-market-research/a-share-small-cap/reports/size_exposure_ladder_v1_zh.md) | [guard summary](../projects/additional-market-research/a-share-small-cap/results/execution-liquidity-guard/guard_summary.csv), [size ladder summary](../projects/additional-market-research/a-share-small-cap/results/size-exposure-ladder/size_ladder_summary.csv), [A-share code](../code/a-share-small-cap/README.md) | [guard NAV](../projects/additional-market-research/a-share-small-cap/figures/execution_liquidity_guard_v1_nav.png), [size ladder Calmar](../projects/additional-market-research/a-share-small-cap/figures/size_ladder_calmar.png) |
+
+Key public metrics:
+
+| Metric | Baseline |
+|---|---:|
+| Annualized return | 30.72% |
+| 30bps cost annualized return | 27.27% |
+| Max drawdown | -66.97% |
+| Worst 12m | -59.36% |
+| 2016-2018 annualized return | -15.78% |
+| 2016-2018 max drawdown | -56.75% |
+| Sell fail rate | 11.83% |
