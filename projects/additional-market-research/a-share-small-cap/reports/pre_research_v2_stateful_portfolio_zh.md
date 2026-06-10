@@ -61,19 +61,19 @@
 
 ## PNG 图
 
-![stateful_nav](figures/stateful_portfolio_nav.png)
+![stateful_nav](../../../../assets/a-share-small-cap/stateful_portfolio_nav.png)
 
-![stateful_drawdown](figures/stateful_portfolio_drawdown.png)
+![stateful_drawdown](../../../../assets/a-share-small-cap/stateful_portfolio_drawdown.png)
 
-![buy_fail_rate](figures/stateful_buy_fail_rate.png)
+![buy_fail_rate](../../../../assets/a-share-small-cap/stateful_buy_fail_rate.png)
 
-![worst_12m_return](figures/stateful_worst_12m_return.png)
+![worst_12m_return](../../../../assets/a-share-small-cap/stateful_worst_12m_return.png)
 
-![cost_stress_30bps](figures/stateful_cost_stress_30bps.png)
+![cost_stress_30bps](../../../../assets/a-share-small-cap/stateful_cost_stress_30bps.png)
 
-![forced_state_pnl](figures/stateful_forced_state_pnl.png)
+![forced_state_pnl](../../../../assets/a-share-small-cap/stateful_forced_state_pnl.png)
 
-![post_rebalance_holdings](figures/stateful_post_rebalance_holdings.png)
+![post_rebalance_holdings](../../../../assets/a-share-small-cap/stateful_post_rebalance_holdings.png)
 
 ## 解读边界
 

@@ -67,14 +67,14 @@ real signal evidence, but it did not replace the baseline portfolio.
 
 ## Selected Figures
 
-- [Stateful NAV](figures/stateful_portfolio_nav.png)
-- [Stateful drawdown](figures/stateful_portfolio_drawdown.png)
-- [Forced-state PnL](figures/stateful_forced_state_pnl.png)
-- [RPE stateful NAV](figures/rpe_stateful_nav.png)
-- [RPE stateful drawdown](figures/rpe_stateful_drawdown.png)
-- [Future profit YoY by strategy](figures/future_profit_yoy_by_strategy.png)
-- [Execution/liquidity guard NAV](figures/execution_liquidity_guard_v1_nav.png)
-- [Size ladder Calmar](figures/size_ladder_calmar.png)
+- [Stateful NAV](../../../assets/a-share-small-cap/stateful_portfolio_nav.png)
+- [Stateful drawdown](../../../assets/a-share-small-cap/stateful_portfolio_drawdown.png)
+- [Forced-state PnL](../../../assets/a-share-small-cap/stateful_forced_state_pnl.png)
+- [RPE stateful NAV](../../../assets/a-share-small-cap/rpe_stateful_nav.png)
+- [RPE stateful drawdown](../../../assets/a-share-small-cap/rpe_stateful_drawdown.png)
+- [Future profit YoY by strategy](../../../assets/a-share-small-cap/future_profit_yoy_by_strategy.png)
+- [Execution/liquidity guard NAV](../../../assets/a-share-small-cap/execution_liquidity_guard_v1_nav.png)
+- [Size ladder Calmar](../../../assets/a-share-small-cap/size_ladder_calmar.png)
 
 ## Public Boundary
 

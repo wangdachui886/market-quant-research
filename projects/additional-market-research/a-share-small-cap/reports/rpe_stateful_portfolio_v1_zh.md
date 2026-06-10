@@ -68,25 +68,25 @@
 
 ## PNG 图
 
-![nav](figures/rpe_stateful_nav.png)
+![nav](../../../../assets/a-share-small-cap/rpe_stateful_nav.png)
 
-![drawdown](figures/rpe_stateful_drawdown.png)
+![drawdown](../../../../assets/a-share-small-cap/rpe_stateful_drawdown.png)
 
-![cost_30bps](figures/rpe_stateful_30bps_ann_return.png)
+![cost_30bps](../../../../assets/a-share-small-cap/rpe_stateful_30bps_ann_return.png)
 
-![ann_2016_2018](figures/rpe_stateful_2016_2018_ann_return.png)
+![ann_2016_2018](../../../../assets/a-share-small-cap/rpe_stateful_2016_2018_ann_return.png)
 
-![worst_12m_ex_2008](figures/rpe_stateful_worst_12m_ex_2008.png)
+![worst_12m_ex_2008](../../../../assets/a-share-small-cap/rpe_stateful_worst_12m_ex_2008.png)
 
-![sell_fail_rate](figures/rpe_stateful_sell_fail_rate.png)
+![sell_fail_rate](../../../../assets/a-share-small-cap/rpe_stateful_sell_fail_rate.png)
 
-![forced_state_pnl](figures/rpe_stateful_forced_state_pnl.png)
+![forced_state_pnl](../../../../assets/a-share-small-cap/rpe_stateful_forced_state_pnl.png)
 
-![median_amount_20d](figures/rpe_stateful_median_amount_20d.png)
+![median_amount_20d](../../../../assets/a-share-small-cap/rpe_stateful_median_amount_20d.png)
 
-![median_float_mcap](figures/rpe_stateful_median_float_mcap.png)
+![median_float_mcap](../../../../assets/a-share-small-cap/rpe_stateful_median_float_mcap.png)
 
-![forced_state_2016_2018](figures/rpe_stateful_2016_2018_forced_state_pnl.png)
+![forced_state_2016_2018](../../../../assets/a-share-small-cap/rpe_stateful_2016_2018_forced_state_pnl.png)
 
 ## 研究解读
 

@@ -58,12 +58,12 @@ engine should not be promoted if capital granularity distorts execution.
 
 ## Selected Figures
 
-- [Clean vs raw NAV](figures/13_M_clean_vs_raw_nav.png)
-- [Raw vs clean NAV grid](figures/15_raw_vs_clean_nav_grid.png)
-- [TSMOM universe vol-targeted](figures/tsmom_universe_voltarget.png)
-- [Pooled TSMOM/Carry comparison](figures/pooled_compare.png)
-- [OOS decomposition](figures/oos_decompose.png)
-- [Capital ladder](figures/capital_ladder.png)
+- [Clean vs raw NAV](../../../assets/futures-cta/13_M_clean_vs_raw_nav.png)
+- [Raw vs clean NAV grid](../../../assets/futures-cta/15_raw_vs_clean_nav_grid.png)
+- [TSMOM universe vol-targeted](../../../assets/futures-cta/tsmom_universe_voltarget.png)
+- [Pooled TSMOM/Carry comparison](../../../assets/futures-cta/pooled_compare.png)
+- [OOS decomposition](../../../assets/futures-cta/oos_decompose.png)
+- [Capital ladder](../../../assets/futures-cta/capital_ladder.png)
 
 ## Public Boundary
 

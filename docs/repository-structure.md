@@ -41,11 +41,9 @@ market-quant-research/
       futures-cta/
         reports/
         results/
-        figures/
       a-share-small-cap/
         reports/
         results/
-        figures/
     a-share-small-cap-archive/  # legacy redirect
   code/
     convertible-bonds/
@@ -62,6 +60,8 @@ market-quant-research/
     convertible-bonds/
     crypto/
     etf-stabilizer/
+    futures-cta/
+    a-share-small-cap/
     portfolio-bridge/
   tests/
     test_etf_stabilizer.py

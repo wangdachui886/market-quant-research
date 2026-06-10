@@ -86,17 +86,17 @@ RPE 相对 baseline 最好的年份：
 
 ## PNG 图
 
-![annual_excess](figures/annual_excess_vs_baseline.png)
+![annual_excess](../../../../assets/a-share-small-cap/annual_excess_vs_baseline.png)
 
-![size_bucket_high_low](figures/size_bucket_rpe_high_minus_low.png)
+![size_bucket_high_low](../../../../assets/a-share-small-cap/size_bucket_rpe_high_minus_low.png)
 
-![size_bucket_high_smallest](figures/size_bucket_rpe_high_minus_smallest.png)
+![size_bucket_high_smallest](../../../../assets/a-share-small-cap/size_bucket_rpe_high_minus_smallest.png)
 
-![sell_fail_rate_by_year](figures/sell_fail_rate_by_year.png)
+![sell_fail_rate_by_year](../../../../assets/a-share-small-cap/sell_fail_rate_by_year.png)
 
-![future_profit_yoy](figures/future_profit_yoy_by_strategy.png)
+![future_profit_yoy](../../../../assets/a-share-small-cap/future_profit_yoy_by_strategy.png)
 
-![regime_annual_excess](figures/regime_annual_excess.png)
+![regime_annual_excess](../../../../assets/a-share-small-cap/regime_annual_excess.png)
 
 ## 解读边界
 

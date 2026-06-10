@@ -141,21 +141,21 @@
 
 ## PNG 图
 
-![coverage_by_year](figures/rpe_coverage_by_year.png)
+![coverage_by_year](../../../../assets/a-share-small-cap/rpe_coverage_by_year.png)
 
-![rank_ic_by_year](figures/rpe_rank_ic_by_year.png)
+![rank_ic_by_year](../../../../assets/a-share-small-cap/rpe_rank_ic_by_year.png)
 
-![rank_ic_by_regime](figures/rpe_rank_ic_by_regime.png)
+![rank_ic_by_regime](../../../../assets/a-share-small-cap/rpe_rank_ic_by_regime.png)
 
-![quintile_return_full](figures/rpe_quintile_ann_return_full.png)
+![quintile_return_full](../../../../assets/a-share-small-cap/rpe_quintile_ann_return_full.png)
 
-![quintile_return_2016_2018](figures/rpe_quintile_ann_return_2016_2018.png)
+![quintile_return_2016_2018](../../../../assets/a-share-small-cap/rpe_quintile_ann_return_2016_2018.png)
 
-![quintile_amount_20d](figures/rpe_quintile_median_amount_20d.png)
+![quintile_amount_20d](../../../../assets/a-share-small-cap/rpe_quintile_median_amount_20d.png)
 
-![quintile_float_mcap](figures/rpe_quintile_median_float_mcap.png)
+![quintile_float_mcap](../../../../assets/a-share-small-cap/rpe_quintile_median_float_mcap.png)
 
-![exposure_corr](figures/rpe_exposure_rank_corr.png)
+![exposure_corr](../../../../assets/a-share-small-cap/rpe_exposure_rank_corr.png)
 
 ## 解读边界
 
