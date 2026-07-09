@@ -6,6 +6,8 @@ Notion is the public reading interface. GitHub is the inspectable research archi
 
 中文说明：本仓库是 Notion 量化研究作品集的技术证据层；Notion 偏叙事和阅读体验，GitHub 偏代码锚点、结果表、图表来源和复现边界。
 
+**Public portfolio / Notion 作品集入口:** [Market Quant Research Portfolio](https://global-paradox-aa7.notion.site/Market-Quant-Research-Portfolio-37571499888a811a813be1ac68e9173b).
+
 See [DISCLAIMER](DISCLAIMER.md) and [LICENSE](LICENSE) before reusing any material.
 
 ## Start Here
